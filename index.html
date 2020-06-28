@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Herobrain_gamer</title>
+        <!-- My Imports & Stuff -->
+        <title>William Roebuck</title>
+        <link rel="shortcut icon" href="assets/logos/my-logos/william_roebuck.jpg">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/navigation.css">
+        <link rel="stylesheet" href="assets/css/top.css">
+        <script src="assets/javascript/back_to_top.js"></script>
+        <script src="assets/javascript/site_theme_music.js"></script>
     </head>
-    <body>
-		<h1>Hello World</h1>
-		<p>Were on github pages</p>
+    <body class="container">
+        <!-- Holds the back 2 top button & the sound button -->
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <button class="themeplaypause" onclick="playPause()"><img src="assets/audio/play_pause_button.png" alt="A Play/Pause Button"/></button>
+            <audio id="TheSiteThemeMusic" loop onloadstart="this.volume=0.068359375"><source src="assets/audio/theme.mp3" type="audio/mpeg"></audio>
+        </div>
+        <!-- The main navigation for the site -->
+        <header class="row justify-content-center">
+            <div class="topnav">
+                <a href="index.html">Main Page</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="accomplishments.html">Accomplishment</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Pictures
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="landsacpes.html">Landscapes</a>
+                        <a href="portraits.html">Portraits</a>
+                        <a href="vacations.html">Vacations</a>
+                    </div>
+                </div>
+                <a href="links.html">Links</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Videos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="herobrain_gamer.html">Herobrain_gamer</a>
+                        <a href="herobrain_gamer2.html">Herobrain_gamer 2</a>
+                    </div>
+                </div>
+                <a href="discord_servers.html">Discord Servers</a>
+                <div class="dropdown">
+                    <button class="dropbtn">School
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="clc.html">CLC</a>
+                        <a href="py1.html">Digital Photography Year One</a>
+                        <a href="py2.html">Digital Photography Year Two</a>
+                        <a href="py3.html">Digital Photography Year Three</a>
+                        <a href="programming_11.html">Programming 11</a>
+                    </div>
+                </div>
+                <a href="https://www.pixilaremedia.com/">Pixilare Media</a>
+            </div>
+        </header>
+        <!-- The main content section for the site -->
+        <main class="col">
+            <div class="row justify-content-center">
+                <h1 class="primary-title">William Roebuck</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col info text-center">
+                    <h2 class="secondary-title">General Info</h2>
+                    <p>Mows lawns, shovels snow for people, custodian for the Salvation Army Church, part time Youtuber & Streamer.</p>
+                    <p>Known as Herobrain_gamer the developer of the Modded Madness modpack and the Parkouring Course Series of maps for Minecraft.</p>
+                    <p>Founder of Pixilare Media and is the main man behind most of the biger projects at Pixilare Media.</p>
+                </div>
+                <div class="col info text-center">
+                    <h2 class="secondary-title">Follow Me?</h2>
+                    <a href="https://twitter.com/Herobrain_gamer" target="_blank"><img class="follow-me" src="assets/logos/my-logos/herobrain_gamer.png" alt="My Twitter Icon"/></a>
+                    <p>My Twitter To Follow If You Want.</p>
+                </div>
+                <div class="col info text-center">
+                    <h2 class="secondary-title">Personal Info</h2>
+                    <p>Full Name : William C. A. Roebuck</p>
+                    <p>Born : April 20th</p>
+                    <p>Education : SAS (Grad 2020)</p>
+                </div>
+            </div>
+        </main>
+        <!-- Has the copyright & other less important stuff -->
+        <footer class="row justify-content-center">
+            <div class="col text-center">
+              <p class="copyright"><a class="copyright" href="https://william.pixilaremedia.com/">William Roebuck</a> &copy; 2016-2020</p>
+              <p class="copyright caption">Site Theme Music Provided By <a class="copyright" href="https://www.ninety9lives.com/music/sapphire/" target="_blank">Ninety9Lives</a></p>
+            </div>
+        </footer>
     </body>
 </html>
