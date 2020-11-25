@@ -1,0 +1,5 @@
+# robots.txt file for William Roebuck's Webstie
+# Created when the universe collapsed in on itself leaving only this file
+
+User-agent: *
+Disallow: /assets/*

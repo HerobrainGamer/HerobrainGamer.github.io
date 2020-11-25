@@ -10,9 +10,15 @@
 }
 .copyright {
     color: darkgray;
+    text-decoration: none;
 }
-.caption {
-    font-size: small;
+.copyrighted {
+    color: darkgray;
+    text-decoration: none;
+}
+.copyrighted:hover {
+    color: lightgray;
+    text-decoration: underline;
 }
 .follow-me {
   border-style: groove;
@@ -34,7 +40,9 @@
     height: auto;
 }
 .download {
+    color: aquamarine;
     font-size: large;
+    text-decoration: none;
 }
 .fixed-size {
     width: 500px;
@@ -54,6 +62,32 @@
     border-style: groove;
     border-color: #222222;
 }
+.nodecoration {
+    text-decoration: none;
+}
+.landscaped {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+.linktrails {
+    color: lightgray;
+    text-decoration: none;
+}
+.linktrail {
+    color: lightgray;
+    text-decoration: none;
+}
+.linktrail:hover {
+    color: gray;
+    text-decoration: underline;
+}
+.ep:hover {
+    width: 75%;
+    height: auto;
+}
 
 /*Text Colours & Boarders*/
 .primary-title {
@@ -62,29 +96,39 @@
 .secondary-title {
     color: violet;
 }
+.tertiary-title {
+    color: mediumpurple;
+}
 .info {
     border: 3px;
     border-color: lightgray;
     border-style: solid;
     border-radius: 50px;
-    color: rgb(165, 112, 218);
+    color: rgba(165, 112, 218, 50);
     padding: 10px;
     margin-right: 3px;
     margin-left: 3px;
-    background-color: #333333;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-decoration: none;
 }
 .links {
     margin-right: 50px;
     margin-left: 50px;
+    text-decoration: none;
 }
 .ats {
     color: gold;
+    text-decoration: none;
 }
 
-/*Bootstrap Overrides*/
+/*Page Layouts*/
 .container {
     min-width:992px!important;
-    background-color: #222222;
+    background-image: url(/assets/images/backgrounds/main.png);
+    background-size: cover;
+    background-attachment: fixed;
     margin-left: 100px;
     margin-right: 100px;
 }
