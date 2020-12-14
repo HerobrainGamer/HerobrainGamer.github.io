@@ -88,6 +88,21 @@
     width: 75%;
     height: auto;
 }
+.linksout {
+    color: slateblue;
+    text-decoration: none;
+}
+.linksout:hover {
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.landscaped2 {
+    width: auto;
+    height: 25%;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
 
 /*Text Colours & Boarders*/
 .primary-title {
