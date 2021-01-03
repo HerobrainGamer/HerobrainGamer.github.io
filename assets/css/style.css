@@ -44,6 +44,10 @@
     font-size: large;
     text-decoration: none;
 }
+.download:hover {
+    color: mediumaquamarine;
+    text-decoration: underline;
+}
 .fixed-size {
     width: 500px;
     height: auto;
