@@ -1,0 +1,32 @@
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.links {
+    margin-right: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.title2 {
+    color: white;
+}
+.links-out {
+    width: 50%;
+    height: auto;
+}
+.ats {
+    color: gold;
+}
+.space-bottom {
+    bottom: 0em;
+}

@@ -1,0 +1,116 @@
+body {
+    /*background-color: darkgray;*/
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GAojbUa/videoblocks-space-background-loop-animation_bwypehusb_thumbnail-small01.jpg")
+}
+
+#im-the-top {
+    background-color: yellowgreen;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.divs {
+    background-color: blue;
+    margin: 200px;
+    padding: 10px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    position: relative;
+    right: 100px;
+    overflow: hidden;
+}
+
+.moo {
+    color: red;
+    text-align: center;
+    overflow: hidden;
+    float: right;
+}
+
+.help {
+    color: purple;
+    text-align: center;
+    overflow: hidden;
+}
+
+.asdf {
+    color: aqua;
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+#death-maybe {
+    color: orange;
+    position: relative;
+    left: 200px;
+    bottom: 100px;
+}
+
+#right {
+    background-color: darkorchid;
+    margin-right: 90px;
+    padding-right: 90px;
+    border: 90px;
+    border-color: aliceblue;
+    border-style: dashed;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+#left {
+    background-color: deeppink;
+    margin-left: 47px;
+    padding-left: 47px;
+    border: 47px;
+    border-color: orange;
+    border-style: outset;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+#bottom {
+    background-color: steelblue;
+    margin-bottom: 33px;
+    padding-bottom: 33px;
+    border: 33px;
+    border-color: palevioletred;
+    border-style: double;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+#top {
+    background-color: darkslategray;
+    margin-top: 82px;
+    padding-top: 82px;
+    border: 82px;
+    border-color: wheat;
+    border-style: ridge;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+#random {
+    background-color: sandybrown;
+    margin: 101px;
+    padding: 101px;
+    border: 101px;
+    border-color: coral;
+    border-style: double;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.themeplaypause {
+	background-color: transparent;
+	border-color: transparent;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 20px;
+	left: 30px;
+}

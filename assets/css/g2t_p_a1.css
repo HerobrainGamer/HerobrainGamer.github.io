@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/images/school/gateway-to-technology/assignment-1/the_pads.jpg");
+    background-attachment: fixed;
+    /*background-color: gray;*/
+    align-self: center;
+    color: white;
+}
+
+header {
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-self: center;
+}
+
+main {
+    align-self: center;
+    /*background-color: lightgray;*/
+    background-color: rgba(211, 211, 211, 0.7);
+    margin-left: 6em;
+    margin-right: 6em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: center;
+    align-self: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+/*Rows & Column*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Div Sutff*/
+
+main > div {
+    margin: 1em;
+    padding: 1em;
+}
+main > div > div {
+    margin: 2em;
+    padding: 2em;
+}
+
+main > div > div > p {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    border: 2px;
+    border-color: rgb(70, 61, 61);
+    border-style: solid;
+    border-radius: 50px;
+}
+
+main > div > div > div {
+    margin: 2em;
+    padding: 1em;
+}
+
+main > div > div > div > iframe {
+    padding: 1em;
+}
+
+/*Figure Stuff*/
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure > img {
+    align-self:  center;
+    border-color: rgb(70, 61, 61);
+    border-style: groove;
+}
+
+figure > figcaption {
+    align-self: center;
+}
+
+/*Other Classes / IDs*/
+
+form {
+    border-color: rgb(70, 61, 61);
+    border-style: groove;
+}
+
+.form-box {
+    padding: 0.3em;
+}
+
+.center {
+    align-self: center;
+}

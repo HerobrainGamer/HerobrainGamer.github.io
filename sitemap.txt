@@ -1,37 +1,70 @@
-home
-|
-|--> accomplishments
-|
-|--> discord-servers
-|
-|--> hobbies
-|
-|--> links
-|
-|--> projects
-|    |
-|    |--> minecraft
-|    |    |
-|    |    |--> maps
-|    |    |    |
+home/root
+|--> assets
+|    |--> css
+|    |--> html
+|    |--> images
+|    |    |--> backgrounds
+|    |    |--> logos
+|    |    |--> projects
+|    |    |    |--> modded-madness
+|    |    |    |--> modded-madness-2-reloaded
 |    |    |    |--> parkour-by-herobrain_gamer
 |    |    |    |--> parkouring-course
 |    |    |    |--> parkouring-course-2
+|    |    |    |--> pixilare-media
 |    |    |    |--> update-adventure
-|    |    |
-|    |    |--> modpacks
-|    |    |    |
-|    |    |    |--> modded-madness
-|    |    |    |--> modded-madness-2-reloaded
-|    |    |    |--> modded-madness-2-reloaded-lite
-|
+|    |    |    |--> youtube
+|    |    |--> school
+|    |    |    |--> accomplishments
+|    |    |    |--> clc
+|    |    |    |    |--> capstone
+|    |    |    |--> gateway-to-technology
+|    |    |    |--> hobbies
+|    |    |    |--> programming-11
+|    |    |    |--> py1
+|    |    |    |--> py2
+|    |    |    |--> py3
+|    |--> js
+|--> blog
+|--> links
+|--> projects
+|    |--> discord-servers
+|    |--> modded-madness
+|    |--> modded-madness-2-reloaded
+|    |--> parkour-by-herobrain_gamer
+|    |--> parkouring-course
+|    |--> parkouring-course-2
+|    |--> update-adventure
+|    |--> youtube
+|    |    |--> herobrain_gamer
+|    |    |    |--> playlists
+|    |    |    |--> videos
+|    |    |--> herobrain_gamer-2
+|    |    |    |--> playlists
+|    |    |    |--> videos
 |--> school
-|    |
+|    |--> accomplishments
 |    |--> career-life-connections
+|    |--> gateway-to-technology
+|    |    |--> programming
+|    |    |    |--> assignment-1
+|    |    |    |--> assignment-2
+|    |    |    |--> assignment-3
+|    |    |    |--> css
+|    |    |    |--> intro
+|    |    |    |--> javascript
+|    |    |    |--> js
+|    |    |    |--> template
+|    |    |    |--> template-flexbox
+|    |    |--> sysadmin
+|    |    |    |--> assignment-1
+|    |    |    |--> profile
+|    |    |    |--> random-number-guessing
+|    |    |    |--> restart-service
+|    |    |    |--> restart-spooler
+|    |--> hobbies
 |    |--> photography-1
-|    |    |
 |    |    |--> edited
-|    |    |    |
 |    |    |    |--> abc-pictures
 |    |    |    |--> heritage-house
 |    |    |    |--> light-painting
@@ -40,9 +73,7 @@ home
 |    |    |    |--> selective-colourization
 |    |    |    |--> videos
 |    |    |    |--> wharf
-|    |    |
 |    |    |--> originals
-|    |    |    |
 |    |    |    |--> autumn-pictures
 |    |    |    |--> bio-pictures
 |    |    |    |--> corn-maze
@@ -52,20 +83,12 @@ home
 |    |    |    |--> mcguire-like
 |    |    |    |--> photo-story
 |    |    |    |--> wharf
-|    |
 |    |--> photography-2
 |    |--> photography-3
-|    |    |
 |    |    |--> edited
-|    |    |    |
 |    |    |    |--> art-gallery-trip
 |    |    |    |--> comic
-|    |    |    |    |
-|    |    |    |    |--> season-1
-|    |    |    |    |--> season-2
-|    |    |    |
 |    |    |    |--> cropping-reminder
-|    |    |    |--> photoshop-assignments
 |    |    |    |--> photo-walk-1
 |    |    |    |--> photo-walk-2
 |    |    |    |--> photo-walk-3
@@ -77,12 +100,11 @@ home
 |    |    |    |--> photo-walk-9
 |    |    |    |--> photo-walk-10
 |    |    |    |--> photo-walk-11
+|    |    |    |--> photoshop-assignments
 |    |    |    |--> random-stuff
 |    |    |    |--> south-canoe
 |    |    |    |--> week-12
-|    |    |
 |    |    |--> originals
-|    |    |    |
 |    |    |    |--> art-gallery-trip
 |    |    |    |--> first-week
 |    |    |    |--> photo-walk-1
@@ -97,9 +119,7 @@ home
 |    |    |    |--> photo-walk-10
 |    |    |    |--> photo-walk-11
 |    |    |    |--> south-canoe
-|    |    |
 |    |    |--> visual-journal
-|    |    |    |
 |    |    |    |--> week-1
 |    |    |    |--> week-2
 |    |    |    |--> week-3
@@ -119,17 +139,4 @@ home
 |    |    |    |--> week-17
 |    |    |    |--> week-18
 |    |    |    |--> week-19
-|    |
 |    |--> programming-11
-|
-|--> videos
-|    |
-|    |--> herobrain_gamer
-|    |    |
-|    |    |--> playlists
-|    |    |--> videos
-|    |
-|    |--> herobrain_gamer-2
-|    |    |
-|    |    |--> playlists
-|    |    |--> videos

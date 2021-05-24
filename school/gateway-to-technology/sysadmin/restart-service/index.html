@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Restart Service - Sysadmin - Gateway To Technology - School - William Roebuck</title>
+        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.png">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <link rel="stylesheet" href="/assets/css/navigation.css">
+        <link rel="stylesheet" href="/assets/css/top.css">
+        <link rel="stylesheet" href="/assets/css/gatewaytotechnology.css">
+        <link rel="stylesheet" href="/assets/css/g2t.css">
+        <script src="/assets/js/global.js"></script>
+        <script src="/assets/js/top.js"></script>
+    </head>
+    <body class="container">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center space-bottom2">
+            <div class="row justify-content-center">
+                <h1 class="title">IT / System Adminstration</h1>
+                <button class="g2t-back"><a class="links" href="/school/gateway-to-technology/">Back</a></button>
+            </div>
+            <div class="row justify-content-center">
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">The Restart Service Script</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p class="text-left" id="script">#restart-service.ps1<br>
+                                #Created : May 27th 2020<br>
+                                #Updated : May 27th 2020<br>
+                                #By : William<br>
+                                <br>
+                                $service = Read-Host "Name of the service you want to restart"<br>
+                                <br>
+                                Restart-Service -Name $service -Verbose</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">What It Does</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p>Well this script restart whatever service you provide to it, when it asks you for the<br> "Name of the service you want to restart" and passes that server into the Restart-Service command.</p>
+                            <p><a class="download" href="https://download.pixilaremedia.com/william/gateway-to-techology/restart-service-1.ps1">Download This Script.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div include-html="/assets/html/footer.html" class="footer-info text-center" ></div>
+        </div>
+    </body>
+</html>

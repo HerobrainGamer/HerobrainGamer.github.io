@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    /*width: 80%;*/
+}
+
+header {
+    background-color: aqua;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
+footer {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+/*Article Sutff*/
+
+main > article {
+    margin: 2em;
+    padding: 2em;
+    background-color: antiquewhite;
+}
+
+main > article > p {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    border: 3px;
+    border-color: coral;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+/*Figure Stuff At Home*/
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure > img {
+    align-self:  center;
+}
+
+figure > figcaption {
+    align-self: center;
+}

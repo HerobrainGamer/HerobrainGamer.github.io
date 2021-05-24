@@ -1,0 +1,27 @@
+.title {
+    color: white;
+}
+.projects {
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    width: 21em;
+    height: 36em;
+}
+.projects img {
+    width: 95%;
+    height: auto;
+    padding: 0.3em;
+}
+.projects img:hover {
+    border: 10px;
+    border-color: violet;
+    border-style: groove;
+    width: 20em;
+    height: 36em;
+    padding: 0em;
+}
+.space-bottom {
+    padding-bottom: 5em;
+}

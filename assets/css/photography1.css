@@ -1,0 +1,77 @@
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.landscaped {
+    border: 3px;
+    border-style: groove;
+    border-color: darkgray;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+}
+.landscaped:hover {
+    border-color: violet;
+}
+.portraited {
+    border: 3px;
+    border-style: groove;
+    border-color: darkgray;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+}
+.portraited:hover {
+    border-color: violet;
+}
+.landscapes {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+.portraits {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+.linktrails {
+    color: white;
+    position: fixed;
+    right: 1em;
+    top: 0.01em;
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.linktrail {
+    color: lightgray;
+}
+.linktrail:hover {
+    color: rgb(132, 76, 184);
+}
+.space-bottom {
+    bottom: 0em;
+}
+.space-bottom2 {
+    padding-bottom: 3em;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Random Number Guessing - Sysadmin - Gateway To Technology - School - William Roebuck</title>
+        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.png">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <link rel="stylesheet" href="/assets/css/navigation.css">
+        <link rel="stylesheet" href="/assets/css/top.css">
+        <link rel="stylesheet" href="/assets/css/gatewaytotechnology.css">
+        <link rel="stylesheet" href="/assets/css/g2t.css">
+        <script src="/assets/js/global.js"></script>
+        <script src="/assets/js/top.js"></script>
+    </head>
+    <body class="container">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="row justify-content-center">
+                <h1 class="title">IT / System Adminstration</h1>
+                <button class="g2t-back"><a class="links" href="/school/gateway-to-technology/">Back</a></button>
+            </div>
+            <div class="row justify-content-center">
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">The Random Number Guessing Script</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p class="text-left" id="script">#A Simple Random Number Guessing Game<br>
+                                <br>
+                                $randomnumber = Get-Random -Maximum 10 -Minimum 1<br>
+                                $guescount = 0<br>
+                                <br>
+                                #while($randomnumber -ne $usernumber)<br>
+                                #{<br>
+                                #    $usernumber = Read-Host "Insert your number between 1 - 10"<br>
+                                #<br>
+                                #    if($randomnumber -eq $usernumber)<br>
+                                #    {<br>
+                                #        Write-Host "Congratulations you guessed correct the number was $randomnumber"<br>
+                                #    }<br>
+                                #    else<br>
+                                #    {<br>
+                                #        Write-Host "Sorry this is not correct please input another number."<br>
+                                #    }<br>
+                                #}<br>
+                                <br>
+                                #do<br>
+                                #{<br>
+                                #    $usernumber = Read-Host "Insert your number between 1 - 10"<br>
+                                #<br>
+                                #    if($randomnumber -eq $usernumber)<br>
+                                #    {<br>
+                                #        Write-Host "Congratulations you guessed correct the number was $randomnumber"<br>
+                                #    }<br>
+                                #    else<br>
+                                #    {<br>
+                                #        Write-Host "Sorry this is not correct please input another number."<br>
+                                #    }<br>
+                                #}<br>
+                                #while($randomnumber -ne $usernumber)<br>
+                                <br>
+                                do<br>
+                                {<br>
+                                    $usernumber = Read-Host "Insert your number between 1 - 10"<br>
+                                    <br>
+                                    if($randomnumber -eq $usernumber)<br>
+                                    {<br>
+                                        Write-Host "Congratulations you guessed correct the number was $randomnumber"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Sorry this is not correct please input another number."<br>
+                                    }<br>
+                                }<br>
+                                until($randomnumber -eq $usernumber)</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">What It Does</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p>Well this script is mostly just a more teaching how to use variables and how to get<br> "random" numbers from the compuuter if needed, and how to test a user input<br> against a computer value that the computer knows to to correct.</p>
+                            <p><a class="download" href="https://download.pixilaremedia.com/william/gateway-to-techology/randomnumber-guessing.ps1">Download This Script.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div include-html="/assets/html/footer.html" class="footer-info2 text-center" ></div>
+        </div>
+    </body>
+</html>

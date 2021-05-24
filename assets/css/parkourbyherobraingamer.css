@@ -1,0 +1,44 @@
+/*Text Stuff*/
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: lightgray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+/*Image Stuff*/
+.landscape {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+/*Links Stuff*/
+.external-links {
+    font-size: xx-large;
+    color: aqua;
+}
+.external-links:hover {
+    color: rgb(125, 81, 221);
+}
+.download {
+    color: aquamarine;
+    font-size: large;
+}
+.download:hover {
+    color: rgb(125, 81, 221);
+}
+/*Spacing Stuff*/
+.space-bottom {
+    bottom: 0em;
+}

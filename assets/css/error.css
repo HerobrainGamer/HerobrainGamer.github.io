@@ -1,0 +1,17 @@
+/*404 Styling*/
+.info {
+    color: white;
+    font-size: large;
+}
+.p-title {
+    font-size: 250px;
+}
+.s-title {
+    color: violet;
+}
+.s-title:hover {
+    color: rgb(127, 90, 207);
+}
+.space-bottom {
+    bottom: 0em;
+}

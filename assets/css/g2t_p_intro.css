@@ -1,0 +1,35 @@
+/*
+    This is a comment
+*/
+* {
+    background-color: #222222;
+}
+p {
+    color: brown;
+    font-size: 10px;
+}
+h1 {
+    color: red;
+}
+h2 {
+    color: green;
+}
+li {
+    color: aqua;
+}
+caption {
+    color: magenta;
+}
+th {
+    color: pink;
+}
+#burger {
+    background-color: gold;
+}
+.comic {
+    font-family: cursive;
+}
+img {
+    width: 100px;
+    height: 100px;
+}

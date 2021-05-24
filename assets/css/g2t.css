@@ -1,0 +1,21 @@
+.g2t-back {
+    background-color: rgba(61, 61, 61, 0);
+    border-color: darkgray;
+    border-radius: 10px;
+    font-size: xx-large;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+.g2t-back:hover {
+    background-color: rgba(61, 61, 61, 0.61);
+    border-color: gray;
+}
+.links {
+    color: black;
+    text-decoration: none;
+}
+.links:hover {
+    color: rgb(116, 43, 185);
+    text-decoration: none;
+}

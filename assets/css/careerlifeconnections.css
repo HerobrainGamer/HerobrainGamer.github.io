@@ -1,0 +1,34 @@
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.download {
+    color: aquamarine;
+    font-size: medium;
+}
+.download:hover {
+    color: rgb(116, 43, 185);
+}
+.fixed-size {
+    width: 500px;
+    height: auto;
+    border: 3px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+.space-bottom {
+    padding-bottom: 3em;
+}

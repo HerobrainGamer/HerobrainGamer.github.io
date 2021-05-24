@@ -1,0 +1,68 @@
+body {
+    background-image:  url("/assets/images/school/gateway-to-technology/assignment-2/background.gif")
+}
+
+.calculator {
+    background-color: darkcyan;
+    padding: 1em;
+    margin-left: 19em;
+    margin-right: 19em;
+}
+
+.screen {
+    padding: 2em;
+    width: 24em;
+    height: auto;
+}
+
+.keys {
+    padding: 2em;
+}
+
+.number {
+    padding: 1em;
+    width: 6em;
+    height: auto;
+}
+
+.operator {
+    padding: 1em;
+    width: 6em;
+    height: auto;
+}
+
+.decimal {
+    padding: 1em;
+    width: 6em;
+    height: auto;
+}
+
+.clear {
+    padding: 1em;
+    width: 6em;
+    height: auto;
+}
+
+.enter {
+    padding: 1em;
+    width: 24em;
+    height: auto;
+}
+
+button {
+    background-color: aqua;
+    border-color: darkgray;
+}
+
+button:hover {
+    background: lightskyblue;
+    border-color: lightslategray;
+}
+
+h1 {
+    padding: 1em;
+}
+
+.row {
+    justify-content: center;
+}

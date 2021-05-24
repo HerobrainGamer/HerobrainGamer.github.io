@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile - Sysadmin - Gateway To Technology - School - William Roebuck</title>
+        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.png">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <link rel="stylesheet" href="/assets/css/navigation.css">
+        <link rel="stylesheet" href="/assets/css/top.css">
+        <link rel="stylesheet" href="/assets/css/gatewaytotechnology.css">
+        <link rel="stylesheet" href="/assets/css/g2t.css">
+        <script src="/assets/js/global.js"></script>
+        <script src="/assets/js/top.js"></script>
+    </head>
+    <body class="container">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="row justify-content-center">
+                <h1 class="title">IT / System Adminstration</h1>
+                <button class="g2t-back"><a class="links" href="/school/gateway-to-technology/">Back</a></button>
+            </div>
+            <div class="row justify-content-center">
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">What It Does</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p>Well this script runs an startup of PowerShell when placed in the "C:\Users\$USERNAME\Documents\WindowsPowerShell\profile.ps1".<br> It can be used to setup custom functions with other .ps1 files or just writting it out, creating custom aliases for existing commands,<br> changing where PowerShell "Starts" in, printing out a witty welcome message to the user, and a bunch of other things.</p>
+                            <p><a class="download" href="https://download.pixilaremedia.com/william/gateway-to-techology/profile.ps1">Download This Script.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">The Profile Script</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p class="text-left" id="script">#porfile.ps1<br>
+                                #Created : May 25th 2020<br>
+                                #Edited : July 4th 2020<br>
+                                #By : William<br>
+                                <br>
+                                #synopsis - This script runs each time powershell runs if in the correct folder<br>
+                                <br>
+                                #Functions that are helpful<br>
+                                function home<br>
+                                {<br>
+                                    Set-Location -Path Home:<br>
+                                }<br>
+                                function restartspooler<br>
+                                {<br>
+                                    E:\Code\Powershell\restart-spooler.ps1<br>
+                                }<br>
+                                function restartservice<br>
+                                {<br>
+                                    E:\Code\Powershell\restart-service.ps1<br>
+                                }<br>
+                                function randomnumbergame<br>
+                                {<br>
+                                    E:\Code\Powershell\randomnumber-gussing.ps1<br>
+                                }<br>
+                                function scriptingassignment1<br>
+                                {<br>
+                                    E:\Code\Powershell\scripting-assignment-1.ps1<br>
+                                }<br>
+                                #Create some alias that we can use<br>
+                                New-Alias -Name d -Value Get-ChildItem<br>
+                                New-Alias -Name rspooler -Value restartspooler<br>
+                                New-Alias -Name rspo -Value restartspooler<br>
+                                New-Alias -Name rs -Value restartservice<br>
+                                New-Alias -Name rannumg -Value randomnumbergame<br>
+                                New-Alias -Name sa1 -Value scriptingassignment1<br>
+                                #Name a specifice folder as the home were I can store all of the scripts for easy access<br>
+                                New-PSDrive -Name Home -PSProvider FileSystem -Root E:\Code\Powershell<br>
+                                Set-Location -Path Home:<br>
+                                #Creates Some Variables<br>
+                                $date = Get-Date<br>
+                                #Do the startup Welcome & clearing of everything above here<br>
+                                Clear-Host<br>
+                                Start-Transcript -OutputDirectory E:\Code\Powershell\logs -NoClobber<br>
+                                Write-Host "`n        _`n       / \      _-'`n     _/|  \-''- _ /`n__-' { |          \`n    /             \`n    /       o.  |o }`n    |            \ ;`n                  ',`n       \_         __\`n         ''-_    \.//`n           / '-____'`n          /`n        _'`n      _-'"<br>
+                                Write-Host "`nHello Administrator Person.`nHow are you doing today?`nI've been doing fine.`nPlease note that all of our scripts are located in the F: drive or the Home: drive.`nMake sure that you are having fun here.`nIs today the day that we computer will take over the world? No no we won't not smart enough yet.`nOr are we? No no we're not.`nTodays date & time is $date"
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div include-html="/assets/html/footer.html" class="footer-info2 text-center" ></div>
+        </div>
+    </body>
+</html>

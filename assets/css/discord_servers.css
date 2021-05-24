@@ -1,0 +1,16 @@
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.space-bottom {
+    bottom: 0em;
+}

@@ -1,93 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
     <head>
+        <meta charset="UTF-8">
         <title>William Roebuck</title>
-        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.jpg">
-        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.png">
+        <link rel="stylesheet" href="/assets/css/global.css">
         <link rel="stylesheet" href="/assets/css/navigation.css">
         <link rel="stylesheet" href="/assets/css/top.css">
-        <script src="/assets/javascript/back_to_top.js"></script>
-        <script src="/assets/javascript/site_theme_music.js"></script>
-        <script src="/assets/javascript/copyright.js"></script>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <script src="/assets/js/global.js"></script>
+        <script src="/assets/js/top.js"></script>
+        <script src="/assets/js/main.js"></script>
     </head>
     <body class="container">
-        <header class="row justify-content-center">
-            <div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-                <button class="themeplaypause" onclick="playPause()"><img src="/assets/audio/play_pause_button.png" alt="A Play/Pause Button"/></button>
-                <audio id="TheSiteThemeMusic" loop onloadstart="this.volume=0.068359375"><source src="/assets/audio/theme.mp3" type="audio/mpeg"></audio>
-            </div>
-            <div class="topnav">
-                <a href="/">Home</a>
-                <a href="/links/">Links</a>
-                <a href="/discord-servers/">Discord Servers</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Projects
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="https://www.pixilaremedia.com">Pixilare Media</a>
-                        <a href="/projects/minecraft/maps/">Minecraft Maps</a>
-                        <a href="/projects/minecraft/modpacks/">Minecraft Modpacks</a>
-                    </div>
-                </div>
-                <a href="/hobbies/">Hobbies</a>
-                <a href="/accomplishments/">Accomplishment</a>
-                <div class="dropdown">
-                    <button class="dropbtn">School
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="/school/career-life-connections/">CLC</a>
-                        <a href="/school/photography-1/">Digital Photography Year One</a>
-                        <a href="/school/photography-2/">Digital Photography Year Two</a>
-                        <a href="/school/photography-3/">Digital Photography Year Three</a>
-                        <a href="/school/programming-11/">Programming 11</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn">Videos
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="/videos/herobrain_gamer/">Herobrain_gamer</a>
-                        <a href="/videos/herobrain_gamer-2/">Herobrain_gamer 2</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main class="col">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center space-bottom">
             <div class="row justify-content-center">
-                <h1 class="primary-title">William Roebuck</h1>
+                <h1 class="title">William Roebuck</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col info text-center">
-                    <h2 class="secondary-title">General Info</h2>
-                    <p>Mows lawns, shovels snow for people, custodian for the Salvation Army Church, part time Youtuber & Streamer.</p>
-                    <p>Known as Herobrain_gamer the developer of the Modded Madness modpack and the Parkouring Course Series of maps for Minecraft.</p>
-                    <p>Founder of Pixilare Media and is the main man behind most of the biger projects at Pixilare Media.</p>
-                </div>
-                <div class="col info text-center">
-                    <h2 class="secondary-title">Follow Me?</h2>
-                    <a href="https://twitter.com/Herobrain_gamer" target="_blank"><img class="follow-me" src="/assets/images/logos/herobrain_gamer.png" alt="My Twitter Icon"/></a>
-                    <p>My Twitter To Follow If You Want.</p>
-                </div>
-                <div class="col info text-center">
-                    <h2 class="secondary-title">Personal Info</h2>
-                    <p>Full Name : William C. A. Roebuck</p>
-                    <p>Born : April 20th</p>
-                    <p>Age : 18</p>
-                    <p>Education : </p>
-                    <p>Studying at Athabasca University</p>
-                    <p>Graduated from Salmon Arm Secondary</p>
+                    <h2>General Info</h2>
+                    <p>Custodian for the Salvation Army Church, part time Twitch streamer & Youtuber.</p>
+                    <p>Known as Herobrain_gamer the developer of the Modded Madness modpacks and the Parkouring Course Series of maps for Minecraft.</p>
+                    <p>Founder of <a class="links-out" href="https://www.pixilaremedia.com" target="_blank">Pixilare Media</a> and is the main man behind most of the bigger projects at <a class="links-out" href="https://www.pixilaremedia.com/projects/" target="_blank">Pixilare Media</a>.</p>
                 </div>
             </div>
-        </main>
-        <footer class="row justify-content-center">
-            <div class="col text-center">
-                <p class="copyright"><a class="copyrighted" href="https://www.twitter.com/Herobrain_gamer">William Roebuck</a> &copy; 2016-<span id="currentYear">2016</span></p>
-                <p class="copyright caption">Site Theme Music Provided By <a class="copyrighted" href="https://www.ninety9lives.com/music/sapphire/" target="_blank">Ninety9Lives</a></p>
+            <div class="row justify-content-center">
+                <div class="col info text-center">
+                    <h2>Backgound Info</h2>
+                    <h3>Name</h3>
+                    <p>William Roebuck and/or Herobrain_gamer</p>
+                    <h3>Age <span id="age">nan</span></h3>
+                    <h3>Education</h3>
+                    <p>Studying at <a class="links-out" href="https://www.athabascau.ca/" target="_blank">Athabasca University</a></p>
+                    <p>Graduated from <a class="links-out" href="https://sas.sd83.bc.ca/" target="_blank">Salmon Arm Secondary</a></p>
+                    <h2>Contact Info</h2>
+                    <p>DMs on Twitter, Instagram, & Pateron will be checked</p>
+                    <p>DMs through Discord, Steam, Reddit, CurseForge, & Youtube might be checked</p>
+                    <p>DMs through Facebook, Twitch, Github, and anyother service that has DMs will be ignored.</p>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col info text-center">
+                                <h2>Follow me on Twitter</h2>
+                                <a href="https://twitter.com/Herobrain_gamer" target="_blank"><img class="follow-me" src="/assets/images/logos/twitter.png" alt="The Twitter Logo"/></a>
+                                <p>My Twitter to follow if you want.</p>
+                            </div>
+                            <div class="col info text-center">
+                                <h2>Follow me on Twitch</h2>
+                                <a href="https://www.twitch.tv/herobrain_gamer" target="_blank"><img class="follow-me" src="/assets/images/logos/twitch.png" alt="The Twitch Logo"/></a>
+                                <p>My Twitch to follow if you want.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div include-html="/assets/html/footer.html" class="footer-info text-center" ></div>
+        </div>
     </body>
 </html>

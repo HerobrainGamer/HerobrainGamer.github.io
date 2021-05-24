@@ -1,0 +1,102 @@
+/*Text Stuff*/
+.title {
+    color: white;
+}
+.info {
+    border: 3px;
+    border-color: lightgray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.infos {
+    border: 3px;
+    border-color: lightgray;
+    border-style: inset;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.versions {
+    font-size: x-large;
+    color: violet;
+}
+.small-font {
+    font-size: medium;
+}
+/*Image Stuff*/
+.landscape {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+.landscaped {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: #222222;
+}
+/*Links Stuff*/
+.linksout {
+    color: gold;
+}
+.linksout:hover {
+    color: rgb(125, 81, 221);
+}
+.external-links {
+    font-size: xx-large;
+    color: aqua;
+}
+.external-links:hover {
+    color: rgb(125, 81, 221);
+}
+.download {
+    color: aquamarine;
+    font-size: large;
+}
+.download:hover {
+    color: rgb(125, 81, 221);
+}
+/*Buttons Stuff*/
+.hideshowBtn {
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.hideshowBtn:hover {
+    background-color: #555;
+}
+.two-toggle {
+    border: 3px;
+    border-color: gray;
+    border-style: groove;
+    outline: none;
+    background-color: rgba(0, 153, 255, 0);
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+.two-toggle:hover {
+    background-color: #555;
+}
+/*Spacing Stuff*/
+.space-bottom {
+    padding-bottom: 3em;
+}

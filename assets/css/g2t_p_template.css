@@ -1,0 +1,46 @@
+body {
+    background-color: gray;
+}
+
+header {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: beige;
+}
+
+main {
+    margin: 1em;
+    padding: 1em;
+    background-color: burlywood;
+}
+
+footer {
+    margin: 2em;
+}
+
+div {
+    margin: 1em;
+    padding: 1em;
+    background-color: blanchedalmond;
+}
+
+main > div > figure > img {
+    width: 15em;
+    height: 15em;
+}
+
+main > div > p {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    border: 3px;
+    border-color: coral;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+@media only screen and (max-with: 500px) {
+    header {
+        background-color: aquamarine;
+    }
+}

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 1 - Sysadmin - Gateway To Technology - School - William Roebuck</title>
+        <link rel="shortcut icon" href="/assets/images/logos/william_roebuck.png">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <link rel="stylesheet" href="/assets/css/navigation.css">
+        <link rel="stylesheet" href="/assets/css/top.css">
+        <link rel="stylesheet" href="/assets/css/gatewaytotechnology.css">
+        <link rel="stylesheet" href="/assets/css/g2t.css">
+        <script src="/assets/js/global.js"></script>
+        <script src="/assets/js/top.js"></script>
+    </head>
+    <body class="container">
+        <div include-html="/assets/html/top.html"></div>
+        <div include-html="/assets/html/nav.html" class="nav"></div>
+        <div class="content justify-content-center text-center">
+            <div class="row justify-content-center">
+                <h1 class="title">IT / System Adminstration</h1>
+                <button class="g2t-back"><a class="links" href="/school/gateway-to-technology/">Back</a></button>
+            </div>
+            <div class="row justify-content-center">
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">What It Does</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p>This was one of the most fun assignemnts that I have ever recieved its basically just 15 questions that I came up with with only a small semblance of being connected.<br> Other than that this was just a small thing to see what we were all capable of doing and putting everything to the test.</p>
+                            <p><a class="download" href="https://download.pixilaremedia.com/william/gateway-to-techology/scripting-assignment-1.ps1">Download This Script.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col justify-content-center info">
+                        <div class="row justify-content-center">
+                            <h2 class="title">Assignment 1 Script</h2>
+                        </div>
+                        <div class="col justify-content-center">
+                            <p class="text-left" id="script">#scripting-assignment-1.ps1<br>
+                                #Created : May 27th 2020<br>
+                                #Updated : June 1st 2020<br>
+                                #By : William<br>
+                                <br>
+                                Write-Host "`nThis is a 'small' quiz that you can take it has some math, trivia, and some other types of questions.`n"<br>
+                                Write-Host "`nFirst up are 5 math realted questions that you must solve.`nIf you end up with a decimal you need to round to the closet full number.`n"<br>
+                                <br>
+                                $q1_1 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q1_2 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q1_a = $q1_1 + $q1_2<br>
+                                <br>
+                                while($q1_p -ne $q1_a)<br>
+                                {<br>
+                                    $q1_p = Read-Host "Question #1 : $q1_1 + $q1_2 = what?"<br>
+                                    <br>
+                                    if($q1_p -eq $q1_a)<br>
+                                    {<br>
+                                        Write-Host "Yes $q1_a is the awnser to $q1_1 + $q1_2"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q2_1 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q2_2 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q2_a = $q2_1 * $q2_2<br>
+                                <br>
+                                while($q2_p -ne $q2_a)<br>
+                                {<br>
+                                    $q2_p = Read-Host "Question #2 : $q2_1 * $q2_2 = what?"<br>
+                                    <br>
+                                    if($q2_p -eq $q2_a)<br>
+                                    {<br>
+                                        Write-Host "Yes $q2_a is the awnser to $q2_1 * $q2_2"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you"<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q3_1 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q3_2 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q3_a = $q3_1 - $q3_2<br>
+                                <br>
+                                while($q3_p -ne $q3_a)<br>
+                                {<br>
+                                    $q3_p = Read-Host "Question #3 : $q3_1 - $q3_2 = what?"<br>
+                                    <br>
+                                    if($q3_p -eq $q3_a)<br>
+                                    {<br>
+                                        Write-Host "Yes $q3_a is the awnser to $q3_1 - $q3_2"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you"<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q4_1 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q4_2 = Get-Random -Maximum $q4_1 -Minimum 1<br>
+                                $q4_a = [math]::Round($q4_1 / $q4_2)<br>
+                                <br>
+                                while($q4_p -ne $q4_a)<br>
+                                {<br>
+                                    $q4_p = Read-Host "Question #4 : $q4_1 / $q4_2 = what?"<br>
+                                    <br>
+                                    if($q4_p -eq $q4_a)<br>
+                                    {<br>
+                                        Write-Host "Yes $q4_a is the awnser to $q4_1 * $q4_2"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you"<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q5_1 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q5_2 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q5_3 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q5_4 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q5_5 = Get-Random -Maximum 100 -Minimum 1<br>
+                                $q5_a = [math]::Round($q5_1 * ($q5_2 + ($q5_3 - $q5_4)) / $q5_5)<br>
+                                <br>
+                                while($q5_p -ne $q5_a)<br>
+                                {<br>
+                                    $q5_p = Read-Host "Question #5 : $q5_1 * ($q5_2 + ($q5_3 - $q5_4)) / $q5_5 = what?"<br>
+                                    <br>
+                                    if($q5_p -eq $q5_a)<br>
+                                    {<br>
+                                        Write-Host "Yes $q5_a is the awnser to $q5_1 * ($q5_2 + ($q5_3 - $q5_4)) / $q5_5"<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you"<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                Write-Host "Now on to some internet trivia.`nYou will be given 5 multiple choice questions with 3 possible awnsers.`nWrite out the awnser that you think it is."<br>
+                                <br>
+                                $q6_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q6_rng -eq 1)<br>
+                                {<br>
+                                    $q6 = "What does IPV4 stand for?"<br>
+                                    $q6_o1 = "Internet Protocol Version 4"<br>
+                                    $q6_o2 = "Idiots Presenting Victory 4"<br>
+                                    $q6_o3 = "Imbcels Pooping Vegatbles 4"<br>
+                                    $q6_a = $q6_o1<br>
+                                }<br>
+                                elseif($q6_rng -eq 2)<br>
+                                {<br>
+                                    $q6 = "This company has 32.4% of the cloud computing market share."<br>
+                                    $q6_o1 = "Google"<br>
+                                    $q6_o2 = "Amazon"<br>
+                                    $q6_o3 = "Microsoft"<br>
+                                    $q6_a = $q6_o2<br>
+                                }<br>
+                                elseif($q6_rng -eq 3)<br>
+                                {<br>
+                                    $q6 = "This operating system handles most of the worlds servers"<br>
+                                    $q6_o1 = "Windows 10"<br>
+                                    $q6_o2 = "MacOS"<br>
+                                    $q6_o3 = "Linux"<br>
+                                    $q6_a = $q6_o3<br>
+                                }<br>
+                                
+                                while($q6_p -ne $q6_a)<br>
+                                {<br>
+                                    $q6_p = Read-Host "Question #6`n$q6`n1) $q6_o1`n2) $q6_o2`n3) $q6_o3`n"<br>
+                                    <br>
+                                    if($q6_p -eq $q6_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                while($q6_p -ne $q6_a)<br>
+                                {<br>
+                                    $q6_p = Read-Host "Question #6`n$q6`n1) $q6_o1`n2) $q6_o2`n3) $q6_o3`n"<br>
+                                    <br>
+                                    if($q6_p -eq $q6_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q7_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q7_rng -eq 1)<br>
+                                {<br>
+                                    $q7 = "Most of the internet is free to use because of what?"<br>
+                                    $q7_o1 = "Personlized Advertizing"<br>
+                                    $q7_o2 = "People wanting to do good"<br>
+                                    $q7_o3 = "Its Not You Pay For Everything"<br>
+                                    $q7_a = $q7_o1<br>
+                                }<br>
+                                elseif($q7_rng -eq 2)<br>
+                                {<br>
+                                    $q7 = "The projected total amount of data in data centers in 2021 is? (According to Statista)"<br>
+                                    $q7_o1 = "928 EB"<br>
+                                    $q7_o2 = "1,327 EB"<br>
+                                    $q7_o3 = "2 ZB"<br>
+                                    $q7_a = $q7_o2<br>
+                                }<br>
+                                elseif($q7_rng -eq 3)<br>
+                                {<br>
+                                    $q7 = "The bigest indepandant YouTuber is who?"<br>
+                                    $q7_o1 = "T-Series"<br>
+                                    $q7_o2 = "TheTrueDuality"<br>
+                                    $q7_o3 = "Pewdiepie"<br>
+                                    $q7_a = $q7_o3<br>
+                                }<br>
+                                <br>
+                                while($q7_p -ne $q7_a)<br>
+                                {<br>
+                                    $q7_p = Read-Host "Question #7`n$q7`n1) $q7_o1`n2) $q7_o2`n3) $q7_o3`n"<br>
+                                    <br>
+                                    if($q7_p -eq $q7_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q8_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q8_rng -eq 1)<br>
+                                {<br>
+                                    $q8 = "Back in 2016 this animal died, and has some conspeary theories that it started the chain of events that caused COVID-19"<br>
+                                    $q8_o1 = "Grumpy Cat"<br>
+                                    $q8_o2 = "Harambe"<br>
+                                    $q8_o3 = "Jellie"<br>
+                                    $q8_a = $q8_o2<br>
+                                }<br>
+                                elseif($q8_rng -eq 2)<br>
+                                {<br>
+                                    $q8 = "What month of 2018 did the discord where G2T for 2020 started"<br>
+                                    $q8_o1 = "July"<br>
+                                    $q8_o2 = "January"<br>
+                                    $q8_o3 = "November"<br>
+                                    $q8_a = $q8_o3<br>
+                                }<br>
+                                elseif($q8_rng -eq 3)<br>
+                                {<br>
+                                    $q8 = "The Linus Tech Tips server room had a fire in it because of what?"<br>
+                                    $q8_o1 = "The UPS"<br>
+                                    $q8_o2 = "The Insulation"<br>
+                                    $q8_o3 = "Their Main Working Server"<br>
+                                    $q8_a = $q8_o1<br>
+                                }<br>
+                                <br>
+                                while($q8_p -ne $q8_a)<br>
+                                {<br>
+                                    $q8_p = Read-Host "Question #8`n$q8`n1) $q8_o1`n2) $q8_o2`n3) $q8_o3`n"<br>
+                                    <br>
+                                    if($q8_p -eq $q8_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q9_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q9_rng -eq 1)<br>
+                                {<br>
+                                    $q9 = "This game has was the most 'infulential' of the last decade."<br>
+                                    $q9_o1 = "Minecraft"<br>
+                                    $q9_o2 = "League of Legends"<br>
+                                    $q9_o3 = "Tetris"<br>
+                                    $q9_a = $q9_o1<br>
+                                }<br>
+                                elseif($q9_rng -eq 2)<br>
+                                {<br>
+                                    $q9 = "What does AAA stand for?"<br>
+                                    $q9_o1 = "Advanced Alcoholics Associsaion"<br>
+                                    $q9_o2 = "Alberta Association of Architects"<br>
+                                    $q9_o3 = "Authentication Authorizatin and Accounting"<br>
+                                    $q9_a = $q9_o3<br>
+                                }<br>
+                                elseif($q9_rng -eq 3)<br>
+                                {<br>
+                                    $q9 = "The internet has a set of unoffical rules what is rule #2"<br>
+                                    $q9_o1 = "If it exists there is lego of it."<br>
+                                    $q9_o2 = "You do NOT talk about /b/."<br>
+                                    $q9_o3 = "The internet does not forget, the internet does not forive."<br>
+                                    $q9_a = $q9_o2<br>
+                                }<br>
+                                <br>
+                                while($q9_p -ne $q9_a)<br>
+                                {<br>
+                                    $q9_p = Read-Host "Question #9`n$q9`n1) $q9_o1`n2) $q9_o2`n3) $q9_o3`n"<br>
+                                    <br>
+                                    if($q9_p -eq $q9_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q10_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q10_rng -eq 1)<br>
+                                {<br>
+                                    $q10 = "Twitch was bought by this company."<br>
+                                    $q10_o1 = "Amazon"<br>
+                                    $q10_o2 = "Sony"<br>
+                                    $q10_o3 = "Disney"<br>
+                                    $q10_a = $q10_o1<br>
+                                }<br>
+                                elseif($q10_rng -eq 2)<br>
+                                {<br>
+                                    $q10 = "Back in 2012 this was supost to happen."<br>
+                                    $q10_o1 = "Disney Going Bankrupt"<br>
+                                    $q10_o2 = "The End Of The XBox 360"<br>
+                                    $q10_o3 = "The End Of The World"<br>
+                                    $q10_a = $q10_o3<br>
+                                }<br>
+                                elseif($q10_rng -eq 3)<br>
+                                {<br>
+                                    $q10 = "The largest email provider was orignally launched on this date"<br>
+                                    $q10_o1 = "July 1st 1999"<br>
+                                    $q10_o2 = "April 1st 2004"<br>
+                                    $q10_o3 = "December 25th 2015"<br>
+                                    $q10_a = $q10_o2<br>
+                                }<br>
+                                <br>
+                                while($q10_p -ne $q10_a)<br>
+                                {<br>
+                                    $q10_p = Read-Host "Question #10`n$q10`n1) $q10_o1`n2) $q10_o2`n3) $q10_o3`n"<br>
+                                    <br>
+                                    if($q10_p -eq $q10_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                Write-Host "The next 5 questions is 2 Truths and 1 Lie you must find the lie that is being told`nYou need to write out your whole awnser for it to work"<br>
+                                <br>
+                                $q_11_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q_11_rng -eq 1)<br>
+                                {<br>
+                                    $q11_o1 = "Has been to Florida"<br>
+                                    $q11_o2 = "Has traveled to Austrila"<br>
+                                    $q11_o3 = "Has two computer monitors"<br>
+                                    $q11_a = $q11_o2<br>
+                                }<br>
+                                elseif($q_11_rng -eq 2)<br>
+                                {<br>
+                                    $q11_o1 = "Has never sworen"<br>
+                                    $q11_o2 = "Hates reading with a passion"<br>
+                                    $q11_o3 = "Owns 12 discord servers"<br>
+                                    $q11_a = $q11_o1<br>
+                                }<br>
+                                elseif($q_11_rng -eq 3)<br>
+                                {<br>
+                                    $q11_o1 = "Has no idea what Marktwain is out side of a song title"<br>
+                                    $q11_o2 = "Had NO T.V. for 8 years"<br>
+                                    $q11_o3 = "Benn to Scotland"<br>
+                                    $q11_a = $q11_o3<br>
+                                }<br>
+                                <br>
+                                while($q11_p -ne $q11_a)<br>
+                                {<br>
+                                    $q11_p = Read-Host "Question #11`nWilliam . . .`n1) $q11_o1`n2) $q11_o2`n3) $q11_o3`n"<br>
+                                    <br>
+                                    if($q11_p -eq $q11_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q_12_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q_12_rng -eq 1)<br>
+                                {<br>
+                                    $q12_o1 = "Was started in April 2012"<br>
+                                    $q12_o2 = "Was started by GenericB"<br>
+                                    $q12_o3 = "Was there before Mindcrack"<br>
+                                    $q12_a = $q12_o2<br>
+                                }<br>
+                                elseif($q_12_rng -eq 2)<br>
+                                {<br>
+                                    $q12_o1 = "Is on Season #7"<br>
+                                    $q12_o2 = "Has 24 people in the current Season"<br>
+                                    $q12_o3 = "Is now a fully modded series"<br>
+                                    $q12_a = $q12_o3<br>
+                                }<br>
+                                elseif($q_12_rng -eq 3)<br>
+                                {<br>
+                                    $q12_o1 = "Is still run by GenericB"<br>
+                                    $q12_o2 = "Uses custom datapacks"<br>
+                                    $q12_o3 = "XisumaVoid admins the server"<br>
+                                    $q12_a = $q12_o1<br>
+                                }<br>
+                                <br>
+                                while($q12_p -ne $q12_a)<br>
+                                {<br>
+                                    $q12_p = Read-Host "Question #12`nHermitcraft . . .`n1) $q12_o1`n2) $q12_o2`n3) $q12_o3`n"<br>
+                                    <br>
+                                    if($q12_p -eq $q12_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q_13_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q_13_rng -eq 1)<br>
+                                {<br>
+                                    $q13_o1 = "Was founded in 2010"<br>
+                                    $q13_o2 = "Name was from an old friend gamertag"<br>
+                                    $q13_o3 = "Changed to Mosterdog this April 1st"<br>
+                                    $q13_a = $q13_o1<br>
+                                }<br>
+                                elseif($q_13_rng -eq 2)<br>
+                                {<br>
+                                    $q13_o1 = "Has over 1,000 tracks"<br>
+                                    $q13_o2 = "Has at least 300 podcast episodes"<br>
+                                    $q13_o3 = "Their most popular tack is Nosistorm - Crab Rave"<br>
+                                    $q13_a = $q13_o3<br>
+                                }<br>
+                                elseif($q_13_rng -eq 3)<br>
+                                {<br>
+                                    $q13_o1 = "Is a Music Label based out of Vancouver, BC, Canada"<br>
+                                    $q13_o2 = "Has over 5 million monthly listeners on Spotify"<br>
+                                    $q13_o3 = "Combined YouTube subscriber count of around 8.1 million"<br>
+                                    $q13_a = $q13_o2<br>
+                                }<br>
+                                <br>
+                                while($q13_p -ne $q13_a)<br>
+                                {<br>
+                                    $q13_p = Read-Host "Question #13`nMonstercat . . .`n1) $q13_o1`n2) $q13_o2`n3) $q13_o3`n"<br>
+                                    <br>
+                                    if($q13_p -eq $q13_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q_14_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q_14_rng -eq 1)<br>
+                                {<br>
+                                    $q14_o1 = "Was acquired by Amazon in 2014"<br>
+                                    $q14_o2 = "Was sold to Fandom in 2018"<br>
+                                    $q14_o3 = "Has intergrations with Amazon Prime"<br>
+                                    $q14_a = $q14_o2<br>
+                                }<br>
+                                elseif($q_14_rng -eq 2)<br>
+                                {<br>
+                                    $q14_o1 = "Was orignally Justin.tv"<br>
+                                    $q14_o2 = "Bought a company called Curse"<br>
+                                    $q14_o3 = "Devloped a payout rewards for people watching"<br>
+                                    $q14_a = $q14_o3<br>
+                                }<br>
+                                elseif($q_14_rng -eq 3)<br>
+                                {<br>
+                                    $q14_o1 = "The bigest Streamer is Ninga"<br>
+                                    $q14_o2 = "Sold parts of Curse to Fandom"<br>
+                                    $q14_o3 = "Was almost sold to Google, if the Antitrust Laws didn't stop them"<br>
+                                    $q14_a = $q14_o1<br>
+                                }<br>
+                                <br>
+                                while($q14_p -ne $q14_a)<br>
+                                {<br>
+                                    $q14_p = Read-Host "Question #14`nTwitch . . .`n1) $q14_o1`n2) $q14_o2`n3) $q14_o3`n"<br>
+                                    <br>
+                                    if($q14_p -eq $q14_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                $q_15_rng = Get-Random -Maximum 4 -Minimum 1<br>
+                                <br>
+                                if($q_15_rng -eq 1)<br>
+                                {<br>
+                                    $q_15 = "Minecraft . . ."<br>
+                                    $q15_o1 = "Is the best selling game of all time."<br>
+                                    $q15_o2 = "Had Minecon 2015 in Tornto, ON, Canada"<br>
+                                    $q15_o3 = "Is the most watched game on YouTube"<br>
+                                    $q15_a = $q15_o2<br>
+                                }<br>
+                                elseif($q_15_rng -eq 2)<br>
+                                {<br>
+                                    $q_15 = "Discord . . ."<br>
+                                    $q15_o1 = "Is a publicly traded company"<br>
+                                    $q15_o2 = "Was originally called Hammer And Chisel, Inc."<br>
+                                    $q15_o3 = "Main page was orignally discordapp.com"<br>
+                                    $q15_a = $q15_o1<br>
+                                }<br>
+                                elseif($q_15_rng -eq 3)<br>
+                                {<br>
+                                    $q_15 = "This Script . . ."<br>
+                                    $q15_o1 = "Was last updated on June 1st 2020"<br>
+                                    $q15_o2 = "Is 547 lines long"<br>
+                                    $q15_o3 = "Was created by Gabriel Funnell"<br>
+                                    $q15_a = $q15_o3<br>
+                                }<br>
+                                <br>
+                                while($q15_p -ne $q15_a)<br>
+                                {<br>
+                                    $q15_p = Read-Host "Question #15`n$q_15`n1) $q15_o1`n2) $q15_o2`n3) $q15_o3`n"<br>
+                                    <br>
+                                    if($q15_p -eq $q15_a)<br>
+                                    {<br>
+                                        Write-Host "Correct moving onto the next question."<br>
+                                    }<br>
+                                    else<br>
+                                    {<br>
+                                        Write-Host "Try again, we belive in you."<br>
+                                        $fail++<br>
+                                    }<br>
+                                }<br>
+                                <br>
+                                if(fail -eq 0)<br>
+                                {<br>
+                                    Write-Host "Congratulations You Have Completed The Quiz Without Getting A Wrong Awnser You Get A Cookie."<br>
+                                }<br>
+                                elseif(fail -eq 1)<br>
+                                {<br>
+                                    Write-Host "Congratulations You Have Completed The Quiz With $fail Wrong Awnser You Get A Slightly Overcooked Cookie."<br>
+                                }<br>
+                                elseif(fail -gt 1)<br>
+                                {<br>
+                                    Write-Host "Congratulations You Have Completed The Quiz With $fail Wrong Awnsers You Get A Very Undercooked Cookie."<br>
+                                }<br>
+                                <br>
+                                #No seriously this is the END of the file.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div include-html="/assets/html/footer.html" class="footer-info2 text-center" ></div>
+        </div>
+    </body>
+</html>

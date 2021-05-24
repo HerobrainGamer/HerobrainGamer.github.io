@@ -1,0 +1,43 @@
+.title {
+    color: white;
+}
+.vidoes {
+    margin-right: 0.7em;
+    margin-left: 0.7em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    width: 21em;
+    height: 36em;
+}
+.vidoes img {
+    width: 95%;
+    height: auto;
+    padding: 0.3em;
+}
+.vidoes img:hover {
+    border: 10px;
+    border-color: violet;
+    border-style: groove;
+    width: 20em;
+    height: 36em;
+    padding: 0em;
+}
+.info {
+    border: 3px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 50px;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(51, 51, 51, 0.7);
+}
+.space-bottom {
+    bottom: 0em;
+}
+.space-bottom2 {
+    padding-bottom: 5em;
+}
+.space-bottom3 {
+    bottom: 0em;
+}

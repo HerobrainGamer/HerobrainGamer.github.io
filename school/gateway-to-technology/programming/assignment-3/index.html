@@ -1,0 +1,136 @@
+<html>
+    <?php
+        $username = "contacts";
+        $password = "password";
+        $database = "Contacts";
+        $server = "localhost";
+
+        $connection = new mysqli($server, $username, $password, $database);
+    ?>
+    <head>
+        <title>The Contact List</title>
+        <!-- bootstrap Imports -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- My Imports -->
+        <link rel="stylesheet" type="text/css" href="/assets/css/g2t_p_a3.css">
+        <link rel="shortcut icon" href="https://avatars0.githubusercontent.com/u/47619029?s=460&v=4">
+        <link rel="stylesheet" href="/assets/css/g2t.css">
+    </head>
+    <body class="container">
+        <div class="mx-auto justify-content-center text-center">
+        <header class="col-lg-10 col-md-10 col-sm-10">
+            <div class="col-sm form-group">
+                <h1>William's Contact List</h1>
+                <button class="g2t-back"><a class="links" href="/school/gateway-to-technology/">Back</a></button>
+            </div>
+        </header>
+        <main class="col justify-content-center text-center">
+            <div class="col-lg-10 col-md-10 col-sm-10">
+                <form method="POST" action="index.php">
+                    <div class="col-sm form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+                    <div class="col-sm form-group">
+                        <input type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="col-sm form-group">
+                        <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm form-group">
+                        <input type="text" class="form-control" name="address" placeholder="Address">
+                    </div>
+                    <div class="col-sm form-group">
+                        <input type="text" class="form-control" name="comments" placeholder="Comments">
+                    </div>
+                    <div class="col-sm form-group">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10">
+                <h2>William's Contacts</h2>
+                <table class="table table-responsive table-dark table-striped">
+                    <thread>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Comments</th>
+                    </thread>
+                    <tbody>
+                        <?php
+                            $query = $connection->prepare("SELECT * FROM ContactList");
+
+                            $query->execute();
+
+                            $result = $query->get_result();
+
+                            while ($row = $result->fetch_assoc())
+                            {
+                                echo("<tr> <th scope='row'>" . $row['name'] . "</th>");
+                                echo("<th>" . $row['email'] . "</th>");
+                                echo("<th>" . $row['phoneNumber'] . "</th>");
+                                echo("<th>" . $row['address'] . "</th>");
+                                echo("<th>" . $row['comments'] . "</th> </tr>");
+                            }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="col">
+            <p>William Roebuck &copy; 2020</p>
+        </footer>
+        </div>
+    </body>
+</html>
+
+<?php
+    $name = NULL;
+    $email = NULL;
+    $phoneNumber = NULL;
+    $address = NULL;
+    $comments = NULL;
+
+    if(isset($_POST['name']))
+    {
+        $name = $_POST['name'];
+    }
+
+    if(isset($_POST['email']))
+    {
+        $email = $_POST['email'];
+    }
+
+    if(isset($_POST['phoneNumber']))
+    {
+        $phoneNumber = $_POST['phoneNumber'];
+    }
+
+    if(isset($_POST['address']))
+    {
+        $address = $_POST['address'];
+    }
+
+    if(isset($_POST['comments']))
+    {
+        $comments = $_POST['comments'];
+    }
+
+    if($name && $email && $phoneNumber && $address && $comments)
+    {
+        $query = $connection->prepare("INSERT INTO ContactList (name, email, phoneNumber, address, comments) VALUES (?, ?, ?, ?, ?)");
+        $query->bind_param('sssss', $name, $email, $phoneNumber, $address, $comments);
+        $query->execute();
+        $result = $query->get_result();
+
+        $connection->close();
+
+        header('Location:index.php');
+    };
+
+    $connection->close();
+?>
